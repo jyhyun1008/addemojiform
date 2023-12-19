@@ -17,9 +17,9 @@ a {
 }
 
 input {
+    
     height: 34px;
     width: calc(100% - 5px);
-    padding: 0 2px;
     border-width: 0px;
     background-color: #fff;
     border: 0;
@@ -63,7 +63,7 @@ input:focus, textarea:focus, select:focus{
     text-align: center;
 }
 
-#signinform {
+#signinform, #emojiform {
     display: flex;
     height: 256px;
     background-color: white;
@@ -73,5 +73,10 @@ input:focus, textarea:focus, select:focus{
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+}
+
+.check {
+    display: flex;
     gap: 10px;
 }
