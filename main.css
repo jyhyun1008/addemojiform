@@ -74,8 +74,11 @@ input:focus, textarea:focus, select:focus{
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
     gap: 10px;
+}
+
+#emojiform {
+    align-items: flex-start;
 }
 
 .check {
