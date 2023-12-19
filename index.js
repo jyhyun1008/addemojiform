@@ -75,7 +75,7 @@ if (!page) {
                         visibility: 'specified',
                         cw: '커스텀 이모지 등록 신청',
                         visibleUserIds: adminId,
-                        text: directMessage
+                        text: directMessage.replace('$emojiUrl', emojiUrl.value).replace('$emojiName', emojiName.value).replace('$emojiCategory', emojiCategory.value).replace('$emojiTag', emojiTag.value)
                     })
                 }
                 fetch(createNoteURL, createNoteParam)

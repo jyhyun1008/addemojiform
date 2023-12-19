@@ -16,4 +16,4 @@ const ruleAgreement = '피치타르트의 <a href="https://i.peacht.art/@admin/p
 const DmAgreement = '본 양식을 제출하게 되면 지금 로그인된 계정으로 피치타르트 관리계정 <a href="https://i.peacht.art/@admin" target="_blank">@admin@i.peacht.art</a> 에게 다이렉트 메시지가 전송되는 것을 이해했으며, 이에 동의합니다.' // 디엠 전송 동의
 
 // 디엠 양식
-const directMessage = '☺️ 다음과 같이 커스텀 이모지 등록을 신청합니다!\n- 주소: `'+emojiUrl.value+'`\n- 이름: `'+emojiName.value+'`\n- 분류: `'+emojiCategory.value+'`\n- 태그: `'+emojiTag.value+'`\n'
+const directMessage = '☺️ 다음과 같이 커스텀 이모지 등록을 신청합니다!\n- 주소: `$emojiUrl`\n- 이름: `$emojiName`\n- 분류: `$emojiCategory`\n- 태그: `$emojiTag`\n'
