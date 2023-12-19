@@ -1,1 +1,3 @@
-# addemojiform
+# 커스텀 이모지 신청 폼
+
+settings.js의 값들을 변경하신 후 사용해주세요!
