@@ -7,7 +7,7 @@ const githubRepoName = 'addemojiform' // 레포지토리 이름
 // 커스텀 폰트 등을 인스턴스와 맞추고 싶을 경우 이용할 수 있는 변수.. 잘못 사용하면 큰일납니당
 const customCss = `
 @import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
-body, input::placeholder {font-family: Galmuri11;}
+body, input, input::placeholder {font-family: Galmuri11;}
 `
 
 // 동의서
