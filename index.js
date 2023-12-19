@@ -119,5 +119,9 @@ if (!page) {
     }
 } else if (page == 'done') {
     document.querySelector('#page_title').innerText = instanceName+' 커스텀 이모지 등록 신청 완료'
-    document.querySelector('#page_content').innerHTML += '<div id="signinform">커스텀 이모지 등록 신청이 잘 완료되었습니다.</div>'
+    document.querySelector('#page_content').innerHTML += '<div id="signinform"><div>커스텀 이모지 등록 신청이 잘 완료되었습니다.</div><div id="goback" class="button">돌아가기</div></div>'
+
+    document.querySelector('#goback').addEventListener('click', function(e) {
+        location.href = location.origin
+    })
 }
