@@ -48,6 +48,8 @@ if (!page) {
         var checkBox = document.querySelector('#checkBox')
         var checkBox2 = document.querySelector('#checkBox2')
 
+        const nameRegex = /^[0-9a-z_]+$/
+
         document.querySelector('#submit').addEventListener('click', function(e) {
             if (emojiUrl.value == '') {
                 alert('이미지 주소를 입력하세요!')
@@ -55,6 +57,8 @@ if (!page) {
                 alert('이름을 입력하세요!')
             } else if (emojiCategory.value == '') {
                 alert('카테고리를 입력하세요!')
+            } else if (nameRegex.test(emojiName.value) !== true) {
+                alert('이모지 이름이 형식에 맞는지 확인해주세요.')
             } else if (emojiTag.value.split(' ').length == 0) {
                 alert('태그를 하나 이상 입력하세요!')
             } else if (!checkBox.checked || !checkBox2.checked) {
