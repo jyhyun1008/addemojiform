@@ -65,7 +65,8 @@ input:focus, textarea:focus, select:focus{
 
 #signinform, #emojiform {
     display: flex;
-    height: 256px;
+    min-height: 256px;
+    padding: 64px 5px;
     background-color: white;
     border-radius: 30px;
     border: var(--accent) dashed 2px;
