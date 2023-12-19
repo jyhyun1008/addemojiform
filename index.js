@@ -39,13 +39,14 @@ var isLogin = false;
 if (!page) {
     if (token) {
         document.querySelector('#page_title').innerText = instanceName+' 커스텀 이모지 등록 신청서'
-        document.querySelector('#page_content').innerHTML += '<div id="emojiform"><label for="emojiUrl">이미지 주소:</label><input id="emojiUrl" placeholder="https://~~~.png"></input><label for="emojiName">이름:</label><input id="emojiName" placeholder="영문 소문자와 숫자, 언더바(_)만 포함해주세요"></input><label for="emojiCategory">카테고리:</label><input id="emojiCategory" placeholder="장르 관련일 경우 제목 및 분류(애니, 게임 등)를 적어주세요."></input><label for="emojiTag">태그:</label><input id="emojiTag" placeholder="한글 위주로 작성해주세요. 공백으로 구분되며, 몇 가지 특수문자를 포함할 수 있습니다. 장르명, 캐릭터명도 함께 적어주세요."></input><input type="checkbox" name="checkbox" id="checkBox" /><label for="checkbox">피치타르트의 <a href="https://i.peacht.art/@admin/pages/content-rule">커스텀 이모지 추가 안내서</a>를 읽었으며, 동의하였습니다.</label><div class="button" id="submit">제출</div></div>'
+        document.querySelector('#page_content').innerHTML += '<div id="emojiform"><label for="emojiUrl">이미지 주소:</label><input id="emojiUrl" placeholder="https://~~~.png"></input><label for="emojiName">이름:</label><input id="emojiName" placeholder="영문 소문자와 숫자, 언더바(_)만 포함해주세요"></input><label for="emojiCategory">카테고리:</label><input id="emojiCategory" placeholder="장르 관련일 경우 제목 및 분류(애니, 게임 등)를 적어주세요."></input><label for="emojiTag">태그:</label><input id="emojiTag" placeholder="한글 위주로 작성해주세요. 공백으로 구분되며, 몇 가지 특수문자를 포함할 수 있습니다. 장르명, 캐릭터명도 함께 적어주세요."></input><input type="checkbox" name="checkBox" id="checkBox" /><label for="checkBox">'+ruleAgreement+'</label><input type="checkbox" name="checkBox2" id="checkBox2" /><label for="checkBox2">'+DmAgreement+'</label><div class="button" id="submit">제출</div></div>'
         
         var emojiUrl = document.querySelector('#emojiUrl')
         var emojiName = document.querySelector('#emojiName')
         var emojiCategory = document.querySelector('#emojiCategory')
         var emojiTag = document.querySelector('#emojiTag')
         var checkBox = document.querySelector('#checkBox')
+        var checkBox2 = document.querySelector('#checkBox2')
 
         document.querySelector('#submit').addEventListener('click', function(e) {
             if (emojiUrl.value == '') {
@@ -56,8 +57,8 @@ if (!page) {
                 alert('카테고리를 입력하세요!')
             } else if (emojiTag.value.split(' ').length == 0) {
                 alert('태그를 하나 이상 입력하세요!')
-            } else if (!checkBox.checked) {
-                alert('커스텀 이모지 추가 안내서에 동의해 주세요.')
+            } else if (!checkBox.checked || !checkBox2.checked) {
+                alert('체크박스 항목에 동의하셔야만 양식 제출이 가능합니다.')
             } else {
                 const createNoteURL = 'https://' + instanceHost + '/api/notes/create'
                 const createNoteParam = {
