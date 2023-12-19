@@ -88,3 +88,7 @@ input:focus, textarea:focus, select:focus{
     width: 20px !important;
     height: 20px !important;
 }
+
+.check label {
+    width: calc(100% - 40px);
+}
