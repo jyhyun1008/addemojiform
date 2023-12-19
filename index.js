@@ -87,7 +87,7 @@ if (!page) {
         document.querySelector('#signin').addEventListener('click', function(e) {
             let uuid = self.crypto.randomUUID();
             localStorage.setItem("sessionId", uuid);
-            var signinUrl = 'https://'+instanceHost+'/miauth/'+uuid+'?name=MiLog&callback=https%3A%2F%2F'+githubUserName+'.github.io%2F'+githubRepoName+'%3Fp%3Dcallback&permission=write:notes'
+            var signinUrl = 'https://'+instanceHost+'/miauth/'+uuid+'?name=EmojiForm&callback=https%3A%2F%2F'+githubUserName+'.github.io%2F'+githubRepoName+'%3Fp%3Dcallback&permission=write:notes'
             location.href = signinUrl;
         })
     }
