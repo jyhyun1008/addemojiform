@@ -75,7 +75,7 @@ if (!page) {
                         visibility: 'specified',
                         cw: '커스텀 이모지 등록 신청',
                         visibleUserIds: ['9gsr4vuc01'],
-                        text: '다음과 같이 커스텀 이모지 등록을 신청합니다.\n- emojiUrl: `'+emojiUrl.value+'`\n- emojiName: `'+emojiName.value+'`\n- emojiCategory: `'+emojiCategory.value+'`\n- emojiTag: `'+emojiTag.value+'`\n'
+                        text: '다음과 같이 커스텀 이모지 등록을 신청합니다.\n- 주소: `'+emojiUrl.value+'`\n- 이름: `'+emojiName.value+'`\n- 분류: `'+emojiCategory.value+'`\n- 태그: `'+emojiTag.value+'`\n'
                     })
                 }
                 fetch(createNoteURL, createNoteParam)
