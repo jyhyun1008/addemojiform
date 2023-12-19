@@ -1,0 +1,77 @@
+
+
+:root {
+    --accent: #fff;
+    --darkaccent: color-mix(in srgb, var(--accent) 70%, #470046);
+    --lightaccent: color-mix(in srgb, var(--accent) 70%, #fbffbb);
+    --bg: rgb(245, 245, 245);
+}
+
+body {
+    background-color: var(--bg);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+input {
+    height: 34px;
+    width: calc(100% - 5px);
+    padding: 0 2px;
+    border-width: 0px;
+    background-color: #fff;
+    border: 0;
+    border-bottom: 2px solid var(--accent);
+    line-height: 1.8;
+    font-size: 1rem;
+    font-family: 'defaultGothic';
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 1rem;
+    font-family: 'defaultGothic';
+    padding: 0px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: #fff solid 0px;
+  }
+
+#container {
+    width: 100%;
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+#page_title {
+    color: var(--darkaccent);
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-top: 64px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.button {
+    padding: 8px 10px 5px 10px;
+    background-color: var(--accent);
+    color: var(--bg);
+    border-radius: 15px;
+    max-width: 100px;
+    text-align: center;
+}
+
+#signinform {
+    display: flex;
+    height: 256px;
+    background-color: white;
+    border-radius: 30px;
+    border: var(--accent) dashed 2px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
