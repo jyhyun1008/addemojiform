@@ -1,8 +1,8 @@
-const instanceHost = 'i.peacht.art' // 인스턴스 주소 https:// 제외하고 입력
+const instanceHost = 'peacht.art' // 인스턴스 주소 https:// 제외하고 입력
 const instanceName = '피치타르트' // 인스턴스 이름
 const themeColor = '#FF9899' // 인스턴스의 메인 색상
 const domainName = 'emoji.peacht.art' // 이 레포지토리를 올릴 도메인 이름
-const adminId = ['9gsr4vuc01', '9gsrcnxa0g'] // 이모지 등록에 관여하거나, 알림을 받아야 하는 계정의 ID를 등록해주세요.
+const adminId = ['9x0yb5dmdh210001', '9x11kiludh210012'] // 이모지 등록에 관여하거나, 알림을 받아야 하는 계정의 ID를 등록해주세요.
 
 // 커스텀 폰트 등을 인스턴스와 맞추고 싶을 경우 이용할 수 있는 변수.. 잘못 사용하면 큰일납니당
 const customCss = `
